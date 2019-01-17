@@ -38,5 +38,10 @@ pipeline {
         sh './jenkins/scripts/deliver.sh'
       }
     }
+    stage('Production'){
+      steps {
+        echo 'deploy into production'
+      }
+    }
   }
 }
